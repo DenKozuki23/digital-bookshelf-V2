@@ -19,6 +19,9 @@
 
     transform: rotate(-5deg);
 }
+        .book.opened {
+    transform: rotate(0deg) scale(1.2);
+        }
         
 .book h2 {
     text-align: center;
@@ -41,7 +44,7 @@
 </div>
     <script>
 function openBook() {
-    alert("Dunia Sophie dibuka!");
+    document.querySelector(".book").classList.add("opened");
 }
     </script>
     
